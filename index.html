@@ -6,9 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Primer Punto</h1>
+                <p>Realizar una aplicación web que permita contar la cantidad de caracteres de un texto ingresado por el usuario</p>
+                <form id="formPuntoUno" name="form1">
+                    <label>Texto: </label>
+                    <input name="nombre" type="text" class="form-control inputs" id="textoIngresado">
+                    <button type="submit" class="btn btn-primary btns">Cantidad de Caracteres Ingresados</button>
+                </form>
+                <h3>Cantidad de Caracteres: </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Segundo Punto</h1>
+                <p>Realizar una aplicación web que permita identificar si el valor ingresado por el usuario es un tipo de dato texto o número.</p>
+                <form id="formPuntoDos" name="form2">
+                    <label>Valor: </label>
+                    <input name="nombre" type="text" class="form-control inputs" id="valorIngresado">
+                    <button type="submit" class="btn btn-primary btns">Tipo de Valor Ingresado</button>
+                </form>
+                <h3>Tipo de Valor Ingresado: </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Tercer Punto</h1>
+                <p>Realizar una aplicación web que permita identificar si una persona es mayor de edad.</p>
+                <form id="formPuntoTres" name="form3">
+                    <label>Nombre: </label>
+                    <input name="nombre" type="text" class="form-control inputs" id="nombreIngresado">
+                    <input name="edad" type="text" class="form-control inputs" id="EdadIngresada">
+                    <button type="submit" class="btn btn-primary btns">Edad de la Persona Ingresada</button>
+                </form>
+                <h3>No se ha ingresado Ninguna Persona</h3>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

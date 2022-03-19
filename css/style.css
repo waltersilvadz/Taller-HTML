@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+
+div{
+    margin: 50px;
+}
+
+.inputs {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.btns{
+    margin: 10px;
+}
+
+h3{
+    margin: 10px
+}
