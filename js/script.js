@@ -8,6 +8,14 @@ $(document).ready(()=>{
     $("#formPuntoDos").submit((ev) => {
         ev.preventDefault();
         valor = $("#valorIngresado").val();
-        $("#respuestaDos").html("Tipo de Valor Ingresado: "+typeof(valor));
+        numero = parseInt(valor);
+        if (isNaN(numero)) {
+            $("#respuestaDos").html("Tipo de Valor Ingresado: Texto");
+        } else {
+            $("#respuestaDos").html("Tipo de Valor Ingresado: Número");
+        }
+        if (valor.length == 0) {
+            $("#respuestaDos").html("Tipo de Valor Ingresado: No hay ningún Valor");
+        }
     });
 });
