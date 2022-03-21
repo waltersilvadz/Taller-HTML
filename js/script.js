@@ -18,4 +18,17 @@ $(document).ready(()=>{
             $("#respuestaDos").html("Tipo de Valor Ingresado: No hay ningún Valor");
         }
     });
+
+    $("#formPuntoTres").submit((ev) => {
+        ev.preventDefault();
+        nombre = $("#nombreIngresado").val();
+        edad = parseInt($("#edadIngresada").val());
+        if (isNaN(edad) || nombre.length == 0) {
+            $("#respuestaTres").html("El nombre o la Edad Ingresada no son correctos");
+        } else if (edad >= 18) {
+            $("#respuestaTres").html("Hola "+nombre+", eres mayor de edad.");
+        } else {
+            $("#respuestaTres").html("Hola "+nombre+", eres menor de edad.");
+        }
+    });
 });
